@@ -21,9 +21,13 @@ module.exports = {
       {
         title: "Specification",
         children: [
-          "/content",
-          "/metadata",
-          "/colours",
+          "/specification/structure.md",
+          "/specification/content",
+          "/specification/metadata",
+          "/specification/colours",
+          "/specification/dictionary",
+          "/specification/resources",
+          "/specification/thumbnail",
         ]
       },
       {
@@ -36,6 +40,13 @@ module.exports = {
           "/elements/paragraph",
           "/elements/text",
         ],
+      },
+      {
+        title: "Migrations",
+        path: "/migrations",
+        children: [
+          "/migrations/0-1-0",
+        ]
       },
     ],
     nav: [
