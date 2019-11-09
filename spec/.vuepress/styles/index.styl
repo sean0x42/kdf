@@ -1,0 +1,29 @@
+// Fonts
+@import url('https://rsms.me/inter/inter.css');
+.theme-container { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  .theme-container {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+
+// Danger block
+.custom-block-title
+  letter-spacing 1px
+  font-size 90%
+
+.custom-block.danger
+  border-radius 3px
+  border-left-width 6px
+
+
+// Clean up headings
+.theme-default-content:not(.custom) > h1:first-child
+  margin 2rem 0 1rem
+
+  & + p
+    margin 1em 0
+
+h1
+  font-size 2em

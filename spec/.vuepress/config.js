@@ -13,7 +13,9 @@ module.exports = {
         title: "Introduction",
         path: "/",
         children: [
-          "/authors"
+          "/motivation",
+          "/dart-kdf",
+          "/authors",
         ]
       },
       {
@@ -21,7 +23,7 @@ module.exports = {
         children: [
           "/content",
           "/metadata",
-          "/colours"
+          "/colours",
         ]
       },
       {

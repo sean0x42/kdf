@@ -1,7 +1,9 @@
-# KDF
+# Kauri Document Format
 
-> *Warning*: KDF is still in the experimental stages, and may change suddenly
-> and without notice at any time. 
+::: danger
+KDF is still in the experimental stages, and may change suddenly and without
+notice at any time. 
+:::
 
 The following is a technical specification for the Kauri Document Format. KDF is
 an open source, JSON based document format, with a focus on gradual improvement
