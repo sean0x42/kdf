@@ -8,7 +8,6 @@ email me at <hello@seanbailey.io>, or follow me on GitHub
 
 The following people also played a role in the development of KDF.
 
- - **Prajna Sariputra** for his help designing KDF in the early stages.
  - The various UON students who contributed to early development of Kauri:
    - Adam Crocker
    - Luke Ingram

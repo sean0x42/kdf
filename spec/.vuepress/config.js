@@ -14,7 +14,7 @@ module.exports = {
         path: "/",
         children: [
           "/motivation",
-          "/dart-kdf",
+          "/implementations",
           "/authors",
         ]
       },
