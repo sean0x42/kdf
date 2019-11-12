@@ -29,7 +29,7 @@ the following features:
 
 ## Other Languages
 
-::: tip
+::: tip NOTE
 Have you created an implementation of KDF in a different language? Let us know,
 and if it is a high quality implementation we'll gladly link to it below.
 :::
