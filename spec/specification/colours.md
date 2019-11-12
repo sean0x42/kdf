@@ -2,7 +2,7 @@
 sidebarDepth: 2
 ---
 
-# Colours
+# Colours & Gradients
 
 ::: tip NOTE
 Always use the spelling `color` when representing colours in a technical
@@ -58,6 +58,12 @@ unique id with a `$`. For example:
   "children": ["Look, I'm Cosmic Blue 500!"]
 }
 ```
+
+
+## Gradients
+
+TODO Discuss gradients.
+
 
 
 ## Document Shades
