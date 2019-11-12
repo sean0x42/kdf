@@ -1,4 +1,66 @@
+---
+sidebarDepth: 2
+---
+
 # Colours
+
+::: tip NOTE
+Always use the spelling `color` when representing colours in a technical
+setting for the sake of consistency.
+:::
+
+## Colour Notations
+
+Colours may be written in a number of different formats, in order to maximise
+ease of use. The following context-free grammar describes possible colour
+formats.
+
+```bnf
+<color> ::= <hex>|<rgb>|<rgba>|<hsl>|<hsla>|<custom-shade>
+```
+
+### Hexadecimal Notation
+
+TODO introduce and describe hexadecimal notation.
+
+```bnf
+      <hex> ::= "#"<hex-token>{3,4}
+<hex-token> ::= 0-9, a-f or A-F ; TODO Formalise
+```
+
+### RGB Function Notation
+
+TODO introduce and describe RGB functional notation
+
+```bnf
+<rgb> ::=
+```
+
+### HSL Function Notation
+
+TODO introduce and describe HSL functional notation
+
+```bnf
+<hsl> ::=
+```
+
+### Custom Shades
+
+TODO introduce custom shades
+
+Shades can be referenced anywhere that normal colours can, be prefixing their
+unique id with a `$`. For example:
+
+```json
+{
+  "type": "span",
+  "styles": { "color": "$cosmic-blue-500" },
+  "children": ["Look, I'm Cosmic Blue 500!"]
+}
+```
+
+
+## Document Shades
 
 Document level colours and shades are stored in the `colours.json` file. It
 contains an ordered list of shades, where each shade has a unique identifier, a
@@ -25,15 +87,13 @@ human readable name, and a valid colour value.
 ]
 ```
 
-## Referencing Shades
+::: tip FOR APPLICATION DEVELOPERS
+If you're writing an editor for KDF, we suggest you also include an application
+level colour palette for users. Shades defined at this level would then be
+accessible across all documents.
+:::
 
-Shades can be referenced anywhere that normal colours can, be prefixing their
-unique id with a `$`. For example:
-
-```json
-{
-  "type": "span",
-  "styles": { "color": "$cosmic-blue-500" },
-  "children": ["Look, I'm Cosmic Blue 500!"]
-}
-```
+::: tip
+See [Custom Shades](#custom-shades) for a description of how to include these
+colours in documents.
+:::

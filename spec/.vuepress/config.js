@@ -21,7 +21,7 @@ module.exports = {
       {
         title: "Specification",
         children: [
-          "/specification/structure.md",
+          "/specification/structure",
           "/specification/content",
           "/specification/metadata",
           "/specification/colours",
