@@ -8,6 +8,7 @@ module.exports = {
     docsDir: "spec",
     editLinks: true,
     searchPlaceholder: "Search...",
+    sidebarDepth: 2,
     sidebar: [
       {
         title: "Introduction",
@@ -24,6 +25,7 @@ module.exports = {
           "/specification/structure",
           "/specification/content",
           "/specification/metadata",
+          "/specification/styles",
           "/specification/colours",
           "/specification/dictionary",
           "/specification/resources",
