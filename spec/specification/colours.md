@@ -15,7 +15,7 @@ formats.
 <color> ::= <hex>|<rgb>|<rgba>|<hsl>|<hsla>|<custom-shade>
 ```
 
-### Hexadecimal Notation
+### Hexadecimal
 
 TODO introduce and describe hexadecimal notation.
 
@@ -24,7 +24,7 @@ TODO introduce and describe hexadecimal notation.
 <hex-token> ::= 0-9, a-f or A-F ; TODO Formalise
 ```
 
-### RGB Function Notation
+### RGB Function
 
 TODO introduce and describe RGB functional notation
 
@@ -32,7 +32,7 @@ TODO introduce and describe RGB functional notation
 <rgb> ::=
 ```
 
-### HSL Function Notation
+### HSL Function
 
 TODO introduce and describe HSL functional notation
 
@@ -59,6 +59,18 @@ unique id with a `$`. For example:
 ## Gradients
 
 TODO Discuss gradients.
+
+### Linear
+
+TODO
+
+### Radial
+
+TODO
+
+### Conical
+
+TODO
 
 
 
