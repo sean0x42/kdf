@@ -27,12 +27,15 @@
 // Danger block
 .custom-block-title
   letter-spacing 1px
-  font-size 90%
+  font-size 14px
+  font-weight: 550
 
 .custom-block.danger,
-.custom-block.tip
+.custom-block.tip,
+.custom-block.warning
   border-radius 3px
   border-left-width 6px
+  margin: 2rem 0
 
 
 // Clean up headings
@@ -42,5 +45,32 @@
   & + p
     margin 1em 0
 
+.theme-default-content:not(.custom)
+  > h2
+    padding-top: 3em
+
+  > h3
+    padding-top: 4em
+
 h1
-  font-size 2em
+  border-bottom 1px solid #eaecef
+  font-size 2.441em
+  font-weight 625
+  letter-spacing: -0.5px
+  padding-bottom: 0.25rem
+
+h2
+  font-size: 1.953em
+  margin-bottom: 0.5em
+
+h3
+  font-size: 1.563em
+
+h4
+  font-size: 1.25em
+
+p
+  line-height: 1.8
+
+a
+  font-feature-settings: 'liga' 0

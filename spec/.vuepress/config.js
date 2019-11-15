@@ -22,7 +22,7 @@ module.exports = {
       {
         title: "Specification",
         children: [
-          "/specification/structure",
+          "/specification/archive",
           "/specification/content",
           "/specification/metadata",
           "/specification/styles",

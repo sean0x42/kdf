@@ -1,8 +1,11 @@
 # Authors
 
-KDF was written and designed by [Sean Bailey](https://seanbailey.io). You can
-email me at <hello@seanbailey.io>, or follow me on GitHub
-[@sean0x42](https://github.com/sean0x42).
+KDF was written and designed by [Sean Bailey][1]. You can email me your ideas,
+criticisms, or comments to <hello@seanbailey.io>, or follow me on GitHub
+[@sean0x42][2] if that's your thing.
+
+[1]: https://seanbailey.io
+[2]: https://github.com/sean0x42
 
 ## Special Thanks
 
@@ -13,3 +16,4 @@ The following people also played a role in the development of KDF.
    - Luke Ingram
    - David Abraham
    - Prajna Sariputra
+ - My family, friends, and coworkers for their patience and support.
