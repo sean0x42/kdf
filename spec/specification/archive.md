@@ -1,6 +1,9 @@
 # Archive & Compression
 
-## Introduction
+This section explores the structure of a KDF document, and the archiving and
+compression algorithms that power it.
+
+## Structure
 
 Much like other document formats, KDF documents are actually compressed archives
 containing a number of smaller files. Each sub file is responsible for a

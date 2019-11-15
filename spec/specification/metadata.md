@@ -10,18 +10,26 @@ This page explores the storage and use of metadata in KDF documents.
 
 [1]: https://en.m.wikipedia.org/wiki/Metadata
 
-All documents
+All document formats require some form of metadata, and KDF is no different.
+KDF powered applications can use metadata for statistical purposes, for
+automatically upgrading documents, and for much more.
 
 
 ## Metadata Store
 
-Hello world
+The basis of metadata in KDF is the metadata store. A key-value store that
+applications can treat like a database.
 
 
 ## Required Metadata
 
-The following items **must** be included in every KDF document, as they are
-required for the effective function of a document.
+The following items **must** be defined in the metadata store, in order maximise
+compatibility between applications.
+
+::: warning
+Required metadata is likely to change in newer versions of KDF. As time goes on,
+standard document editor features change and adapt, and so too does metadata.
+:::
 
 
 ### Title
