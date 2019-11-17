@@ -11,7 +11,7 @@ module.exports = {
     sidebarDepth: 2,
     sidebar: [
       {
-        title: "Preamble",
+        title: "Kauri Document Format",
         children: [
           "/",
           "/implementations",

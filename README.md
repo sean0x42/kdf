@@ -36,4 +36,4 @@ View the rest of the specification online at [kdf.now.sh][2].
 
 [1]: https://i.imgur.com/tZn38eJ.png
 [2]: https://kdf.now.sh
-[3]: https://img.shields.io/github/package-json/v/sean0x42/kdf
+[3]: https://img.shields.io/github/package-json/v/sean0x42/kdf?color=%233eaf7c&style=flat-square

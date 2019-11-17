@@ -2,8 +2,6 @@
 
 ![GitHub package.json version][1]
 
-[1]: https://img.shields.io/github/package-json/v/sean0x42/kdf
-
 ::: danger
 KDF is currently an experimental document format, and may change suddenly and
 without notice at any time. 
@@ -36,7 +34,31 @@ We've packed many great features into KDF. Here's some highlights:
 
 ## Motivation
 
-TODO Discuss why KDF was built, where Office Open XML and the Open Document
-Format fall flat. Essentially this should be an essay about the state of the
-industry, and how KDF aims to solve some problems, at least in its support of
-Kauri.
+There are currently two major, competing document formats (though other less
+common ones do exist):
+
+ 1. [**Office Open XML (OOXML)**][2]: An open, XML based document format that
+    was initially developed by Microsoft. OOXML is the specification behind the
+    following file formats that you've likely seen before:
+      - `.docx` for word processing.  
+      - `.xlsx` for spreadsheets.
+      - `.pptx` for presentations. 
+
+ 2. [**OpenDocument Format (ODF)**][3]: An open, XML based document format that
+    is widely used amongst open source office suites. ODF defines the following
+    file formats:
+      - `.odt` for word processing.
+      - `.ods` for spreadsheets.
+      - `.odp` for presentations.
+      - `.odg` for graphics.
+      - `.odf` for formalae.
+
+These formats played an important role in word processor history, but have
+become stagnant.
+
+TODO
+
+
+[1]: https://img.shields.io/github/package-json/v/sean0x42/kdf?color=%233eaf7c&style=flat-square
+[2]: http://officeopenxml.com/
+[3]: http://opendocumentformat.org/

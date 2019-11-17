@@ -2,6 +2,15 @@
   "name": "kdf",
   "description": "A technical specification for the Kauri Document Format",
   "version": "0.1.0-alpha",
+  "license": "MIT",
+  "repository": "github:sean0x42/kdf",
+  "keywords": [
+    "kauri",
+    "kdf",
+    "specification",
+    "documents"
+  ],
+  "private": true,
   "scripts": {
     "dev": "vuepress dev spec",
     "build": "vuepress build spec"
