@@ -1,4 +1,4 @@
-# Elements
+# Introduction
 
 An element is a special type of node, which has the following additional
 attributes:

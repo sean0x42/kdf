@@ -11,10 +11,9 @@ module.exports = {
     sidebarDepth: 2,
     sidebar: [
       {
-        title: "Introduction",
-        path: "/",
+        title: "Preamble",
         children: [
-          "/motivation",
+          "/",
           "/implementations",
           "/authors",
         ]
@@ -34,8 +33,8 @@ module.exports = {
       },
       {
         title: "Element Reference",
-        path: "/elements",
         children: [
+          "/elements/",
           "/elements/footnote",
           "/elements/group",
           "/elements/heading",

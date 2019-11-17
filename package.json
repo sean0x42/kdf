@@ -1,4 +1,7 @@
 {
+  "name": "kdf",
+  "description": "A technical specification for the Kauri Document Format",
+  "version": "0.1.0-alpha",
   "scripts": {
     "dev": "vuepress dev spec",
     "build": "vuepress build spec"
