@@ -1,5 +1,5 @@
 module.exports = {
-  title: "KDF Specification",
+  title: "KDF v0.1.0-alpha",
   description: "A technical specification for the Kauri Document Format",
   dest: "public",
   themeConfig: {
@@ -45,8 +45,8 @@ module.exports = {
       },
       {
         title: "Migrations",
-        path: "/migrations",
         children: [
+          "/migrations/",
           "/migrations/0-1-0",
         ]
       },

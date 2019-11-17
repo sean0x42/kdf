@@ -1,4 +1,4 @@
-# Migrations
+# Introduction
 
 Migrations are specially designed functions that convert a KDF document from one
 version to another. These functions allow tools to automatically upgrade
