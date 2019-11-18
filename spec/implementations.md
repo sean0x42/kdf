@@ -1,31 +1,26 @@
 # Implementations
 
-This page lists libraries and tools that will help to manage KDF files.
+This page lists libraries and tools that will help to manage and convert KDF
+files.
 
 
 ## Dart
 
 ::: danger
-Dart KDF is still currently in active development! The information below may be
-out of date, or inaccurate. Please check out the [`dart-kdf` repository][1] on
+Dart KDF is still currently in active development. The information below may be
+inaccurate or out of date. Please check out the [`dart-kdf` repository][1] on
 GitHub for the latest information.
 :::
 
-[Dart KDF][1] is the official library for managing KDF documents. You can
-use it as either a command line application or as a [Dart][2] library. It boasts
+[Dart KDF][1] is an official library for managing and converting KDF documents.
+You can use it as either a command line application or as a [Dart][2] library. It boasts
 the following features:
 
  - Loading and saving KDF files.
  - Automatically upgrading KDF documents to newer versions.
- - Saving KDF files to a variety of existing formats, including:
-   - `.pdf`
-   - `.docx`
-   - `.odt`
-   - `.epub`
-   - `.html`
- - Converting existing formats into KDF, including:
-   - `.docx`
-   - `.odt`
+ - Exporting to common file formats, such as `.pdf` and `.epub`.
+ - Saving to a variety of existing formats, including `.docx` and `.odt`.
+ - Converting existing formats into KDF, including `.docx` and `.odt`.
 
 ## Other Languages
 

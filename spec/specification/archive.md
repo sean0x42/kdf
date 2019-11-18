@@ -10,18 +10,24 @@ containing a number of smaller files. Each sub file is responsible for a
 different part of the document. They are listed below:
 
  - [Content][1] (`content.json`) — This file contains the content and structure
-   of your document, both linear and nonlinear.
+   of a document, both linear and nonlinear. If you imagine the structure of a
+   website, `content.json` is equivalent to the HTML.
  - [Colours][2] (`colours.json`) — This file defines a document level custom
-   colour palette.
+   colour palette. Shades defined in this file can be used throughout the
+   document.
  - [Dictionary][3] (`dictionary.json`) — An optional file that lists any words
-   that the user wants added to the spellcheck dictionary.
+   that document authors want added to the spellcheck dictionary. When this file
+   doesn't exist, applications can safely assume that no additional words need
+   to be added.
  - [Metadata][4] (`meta.json`) — A file which stores document metadata, such as
-   the title, KDF version and a list of authors.
+   the title, KDF version and a list of authors. Applications can also use this
+   file as a generic metadata store.
  - [Styles][5] (`styles.json`) — A file which describes how pages and other
-   elements in your document should look.
+   elements in the document should be rendered. 
  - [Resources][6] (`resources/`) — A directory containing images, fonts, and any
-   other static content.
- - [Thumbnail][7] (`thumbnail.png`) — A thumbnail to display in the file system.
+   other static content that is included in the document.
+ - [Thumbnail][7] (`thumbnail.png`) — An optional thumbnail image to display in
+   the file system. 
 
 ::: tip
 You can inspect the structure of a KDF file by changing the file extension from

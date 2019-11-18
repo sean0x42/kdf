@@ -28,6 +28,7 @@ store as they see fit.
 ```json
 {
   "title": "15 Reasons Comic Sans is the World's Greatest Font",
+  "target": "print",
   "authors": [
     "Sean Bailey",
     "Adam Crocker",
@@ -46,25 +47,8 @@ store as they see fit.
 ## Required Metadata
 
 The following items **must** be defined in the metadata store, in order maximise
-compatibility between applications.
-
-
-### Title
-
-| Type             | Maximum Length |
-| :--------------- | -------------: |
-| String or `null` |      256 chars |
-
-Every document must have a human readable title. Application developers may wish
-to prompt the author for a title when the document is created, but this is not a
-requirement.
-
-```json
-{
-  "title": "Not the Bees",
-  ...
-}
-```
+compatibility between applications. Items have been listed in alphabetical
+order, but may be defined in any order.
 
 
 ### Authors
@@ -101,30 +85,6 @@ document is created, not when it is saved for the first time.
 {
   ...,
   "createdAt": "2019-08-03T02:37:12+11",
-  ...
-}
-```
-
-
-### Updated At
-
-| Type   | Format        | Standard      |
-| :----- | :------------ | :------------ |
-| String | [Datetime][3] | [ISO 8601][2] |
-
-The `updatedAt` key contains the date and time that the document was last edited.
-Initially, this value will be set to the same timestamp as the `createdAt` key,
-but will diverge once the first modification to the document is made.
-
-::: tip NOTE
-Much like the `createdAt` key, this value should be updated whenever an edit to
-the document is made, not when the document is saved.
-:::
-
-```json
-{
-  ...,
-  "updatedAt": "2019-08-03T02:37:12+11",
   ...
 }
 ```
@@ -171,9 +131,71 @@ use the latest version of KDF.
 ```
 
 
+## Target
+
+| Type   | Possible Values  |
+| :----- | :--------------- |
+| String | `web` or `print` |
+
+The `target` key defines whether this document has been designed for use in
+print (e.g. as a PDF) or for the web. Application developers can use this value
+to provide different tools depending on the target destination.
+
+```json
+{
+  ...,
+  "target": "print",
+  ...
+}
+```
+
+
+### Title
+
+| Type             | Maximum Length |
+| :--------------- | -------------: |
+| String or `null` |      256 chars |
+
+Every document must have a human readable title. Application developers may wish
+to prompt the author for a title when the document is created, but this is not a
+requirement.
+
+```json
+{
+  "title": "",
+  ...
+}
+```
+
+
+### Updated At
+
+| Type   | Format        | Standard      |
+| :----- | :------------ | :------------ |
+| String | [Datetime][3] | [ISO 8601][2] |
+
+The `updatedAt` key contains the date and time that the document was last edited.
+Initially, this value will be set to the same timestamp as the [`createdAt`][6]
+key, but will diverge once the first modification to the document is made.
+
+::: tip NOTE
+Much like the [`createdAt`][6] key, this value should be updated whenever an
+edit to the document is made, not when the document is saved.
+:::
+
+```json
+{
+  ...,
+  "updatedAt": "2019-08-03T02:37:12+11",
+  ...
+}
+```
+
+
 
 [1]: https://en.m.wikipedia.org/wiki/Metadata
 [2]: https://www.iso.org/iso-8601-date-and-time-format.html
 [3]: https://en.wikipedia.org/wiki/ISO_8601#Combined_date_and_time_representations
 [4]: https://en.wikipedia.org/wiki/ISO_8601#Durations
 [5]: https://semver.org/
+[6]: #created-at
