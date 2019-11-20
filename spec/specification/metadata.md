@@ -62,7 +62,7 @@ belongs to an author that contributed to the document. An author's name will
 *only* be added once a modification is made, and never from simply opening the
 document.
 
-```json
+```json{3}
 {
   "title": "On Colour and Brand Identity",
   "authors": ["Sean Bailey"],
@@ -131,7 +131,7 @@ use the latest version of KDF.
 ```
 
 
-## Target
+### Target
 
 | Type   | Possible Values  |
 | :----- | :--------------- |
@@ -162,7 +162,7 @@ requirement.
 
 ```json
 {
-  "title": "",
+  "title": "The Lincolnshire Poacher",
   ...
 }
 ```
