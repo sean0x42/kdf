@@ -1,5 +1,11 @@
 # Heading
 
+| Type        | Interface |
+| :---------- | :-------- |
+| [Linear][1] | Element   |
+
+[1]: ../specification/content.md#linear-content
+
 A section heading, which marks the beginning of a section of text. Heading's are
 usually styled to stand out against body text. This may be achieved by
 increasing the font size, using a darker colour, increasing the font weight, or
@@ -13,8 +19,13 @@ a combination of all three.
 }
 ```
 
+## Attributes
 
-## `level`: Integer
+### Level
+
+| Required | Type    | Range      |
+| :------- | :------ | :--------- |
+| Yes      | Integer | `1` to `6` |
 
 The `level` attribute is required for all headings, and may contain any integer
 from 1 to 6, where 1 is the highest level and 6 is the lowest. It is

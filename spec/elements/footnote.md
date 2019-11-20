@@ -1,8 +1,13 @@
 # Footnote
 
-The footnote element adds a comment or reference to the bottom of the page. A
-unique, numerical index—stylised as <sup>[index]</sup>—will also be included
-within the main content.
+| Type        | Interface |
+| :---------- | :-------- |
+| [Linear][1] | Element   |
+
+[1]: ../specification/content.md#linear-content
+
+The footnote element adds a comment or note to the page footer. This note may
+contain author commentary, references, or otherwise.
 
 ```json
 {
@@ -19,4 +24,14 @@ within the main content.
 }
 ```
 
-The footnote element has no special attributes.
+This element adds content to two separate areas of the document. Firstly, a
+marker is inserted at the location of the element in the tree, containing a
+unique numerical index. The marker also acts as a hyperlink, which directs the
+reader to the footnote itself. Secondly, a note is added to a reserved area in
+the footer of the page. This note also includes a hyperlink and a unique
+numerical index.
+
+
+## Attributes
+
+This element has no special attributes.

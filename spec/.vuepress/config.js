@@ -15,6 +15,7 @@ module.exports = {
         children: [
           "/",
           "/implementations",
+          "/contributing",
           "/authors",
         ]
       },

@@ -1,109 +1,14 @@
-// Fonts
-@import url('https://rsms.me/inter/inter.css');
-.theme-container { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  .theme-container {
-    font-family: 'Inter var', sans-serif;
-  }
-}
+// SETTINGS
+@import "settings/fonts"
 
-// Sidebar
-.sidebar ul.sidebar-sub-headers
-  font-size: 1em
-  padding-left: 0.75rem
+// ELEMENTS
+@import "elements/figure"
+@import "elements/headings"
+@import "elements/links"
+@import "elements/lists"
+@import "elements/paragraph"
 
-  a.sidebar-link
-    padding-top: 0.35rem
-    padding-bottom: 0.35rem
-    padding-left: 2rem
-    border-left: 0.25rem solid transparent
-  
-  > a.sidebar-link
-    color: #506172
-
-  .sidebar-sub-headers a.sidebar-link
-    color: #657686
-
-p.sidebar-heading
-  font-weight 600
-
-
-// Danger block
-.custom-block-title
-  letter-spacing 1px
-  font-size 14px
-  font-weight: 550
-
-.custom-block.danger,
-.custom-block.tip,
-.custom-block.warning
-  border-radius 3px
-  border-left-width 6px
-  margin: 1.5rem 0
-
-
-// Search
-div.search-box
-  input 
-    background-color: #f8f8fa
-    border 1px solid #e5e8ee
-    border-radius 3px
-    font-family: inherit
-
-
-// Clean up headings
-.theme-default-content:not(.custom) > h1:first-child
-  margin 2rem 0 1rem
-
-  & + p
-    margin 1em 0
-
-.theme-default-content:not(.custom)
-  > h2
-    padding-top: 3em
-
-  > h3
-    padding-top: 3.5em
-
-h1
-  border-bottom 1px solid #eaecef
-  font-size 2.441em
-  font-weight 625
-  letter-spacing: -0.5px
-  padding-bottom: 0.25rem
-
-h2
-  font-size: 1.953em
-  margin-bottom: 0.5em
-
-h3
-  color: #405264
-  font-size: 1.563em
-
-h4
-  font-size: 1.25em
-
-p
-  line-height: 1.8
-
-
-// Links
-a
-  font-feature-settings: 'liga' 0
-
-// Lists
-ul,
-ol
-  padding-left 2.5em
-
-// Images
-figure
-  margin: 2rem 1rem
-
-  & > img
-    border-radius: 3px
-
-  & > figcaption 
-    color: #647484
-    text-indent: 2em
-    
+// COMPONENTS
+@import "components/hints"
+@import "components/search"
+@import "components/sidebar"
