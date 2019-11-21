@@ -15,9 +15,9 @@ orienting new document authors, and for much more.
 
 ## Metadata Store
 
-In KDF, metadata is stored within the `meta.json` file as key-value pairs. Each
-key is a string in lower camelCase (e.g. `"editDuration"`), and each value can
-be any valid JSON type.
+In KDF, metadata is stored within the `metadata.json` file as key-value pairs.
+Each key is a string in lower camelCase (e.g. `"editDuration"`), and each value
+can be any valid JSON type.
 
 ::: tip NOTE
 There are some required key-value pairs that will be discussed in the next

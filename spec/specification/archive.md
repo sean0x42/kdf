@@ -19,9 +19,9 @@ different part of the document. They are listed below:
    that document authors want added to the spellcheck dictionary. When this file
    doesn't exist, applications can safely assume that no additional words need
    to be added.
- - [Metadata][4] (`meta.json`) — A file which stores document metadata, such as
-   the title, KDF version and a list of authors. Applications can also use this
-   file as a generic metadata store.
+ - [Metadata][4] (`metadata.json`) — A file which stores document metadata, such
+   as the title, KDF version and a list of authors. Applications can also use
+   this file as a generic metadata store.
  - [Styles][5] (`styles.json`) — A file which describes how pages and other
    elements in the document should be rendered. 
  - [Resources][6] (`resources/`) — A directory containing images, fonts, and any
