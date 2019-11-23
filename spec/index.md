@@ -34,31 +34,25 @@ We've packed many great features into KDF. Here's some highlights:
 
 ## Motivation
 
-There are currently two major, competing document formats (though other less
-common ones do exist):
+Modern document editors all suffer from the same issues—feature bloat,
+formatting pains, and stagnation. It's an industry of convention and tradition,
+where the dominant forces define everything from user interface to user
+experience. As a result, we see almost no attempts to innovate or challenge
+established ideas.
 
- 1. [**Office Open XML (OOXML)**][2]: An open, XML based document format that
-    was initially developed by Microsoft. OOXML is the specification behind the
-    following file formats that you've likely seen before:
-      - `.docx` for word processing.  
-      - `.xlsx` for spreadsheets.
-      - `.pptx` for presentations. 
+To begin resolving this issue, we need to first design a new document format
+that considers the requirements of modern times. The design decisions we make at
+the document format level are crucial, as they will flow on to impact the
+experience of our document editors as well. To this extent, KDF has been
+designed to embody the following needs:
 
- 2. [**OpenDocument Format (ODF)**][3]: An open, XML based document format that
-    is widely used amongst open source office suites. ODF defines the following
-    file formats:
-      - `.odt` for word processing.
-      - `.ods` for spreadsheets.
-      - `.odp` for presentations.
-      - `.odg` for graphics.
-      - `.odf` for formalae.
-
-These formats played an important role in word processor history, but have
-become stagnant.
-
-TODO
+ - Modern documents need to be accessible **both online and in print**.
+ - Modern document formats **should be updated** as we learn more. They should
+   embrace gradual improvement over time, and take advantage of the ideas of
+   many contributors.
+ - Modern documents must **embrace collaboration**.
+ - Modern document formats **should encourage creativity and experimentation**,
+   both in content and in design.
 
 
 [1]: https://img.shields.io/github/package-json/v/sean0x42/kdf?color=%233eaf7c&style=flat-square
-[2]: http://officeopenxml.com/
-[3]: http://opendocumentformat.org/

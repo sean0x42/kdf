@@ -9,3 +9,5 @@ Some versions of KDF will contain no breaking changes. This means that
 migrations will simply bump document's version, without making any changes to
 its content. Other versions may contain sweeping changes. That's okay!
 :::
+
+TODO This page could really use a diagram.

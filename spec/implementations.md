@@ -1,7 +1,7 @@
 # Implementations
 
-This page lists libraries and tools that will help to manage and convert KDF
-files.
+Looking for KDF support? This page documents any libraries, tools, and
+implementations that support the Kauri Document Format.
 
 
 ## Dart
@@ -21,6 +21,7 @@ the following features:
  - Exporting to common file formats, such as `.pdf` and `.epub`.
  - Saving to a variety of existing formats, including `.docx` and `.odt`.
  - Converting existing formats into KDF, including `.docx` and `.odt`.
+
 
 ## Other Languages
 
