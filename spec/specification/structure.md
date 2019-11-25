@@ -1,12 +1,21 @@
-# Archive & Compression
+# File Structure
 
 This section explores the structure of a KDF document, and the archiving and
 compression algorithms that power it.
 
-## Structure
+
+## JSON
+
+TODO Describe and introduce JSON. Discuss why it was used for this
+specification, and its implications. Recommend that readers become well
+acquainted with JSON before reading the rest of the specification, as it will
+appear frequently.
+
+
+## Archive Layout 
 
 Much like other document formats, KDF documents are actually compressed archives
-containing a number of smaller files. Each sub file is responsible for a
+containing a number of smaller files. Each sub-file is responsible for a
 different part of the document. They are listed below:
 
  - [Content][1] (`content.json`) — This file contains the content and structure
@@ -47,9 +56,11 @@ as 7zip or WinRAR to extract a `.tar.gz` file.
 
 ## Compression
 
-KDF documents should be collected into a single [tarball][8], and then
-compressed with [gzip][9]. This makes the end result kind of like a `.tar.gz`
-file, but the file extension should always be `.kdf` to avoid confusion.
+Each of the KDF sub-files listed [above][10], should be collected into a single
+[tarball][8] archive, and then compressed with [Gzip][9]. This makes the end
+result kind of like a `.tar.gz` file. Note however that the file extension
+should always be `.kdf` to avoid confusion.
 
 [8]: https://en.wikipedia.org/wiki/Tar_(computing)
 [9]: https://www.gnu.org/software/gzip
+[10]: #archive-layout

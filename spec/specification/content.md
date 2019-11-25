@@ -61,4 +61,15 @@ use them, please see the [element reference][2].
 
 Unlike linear content, nonlinear content may be rendered anywhere in the
 document, including on top of other content. Instead of being structure in a
-tree, nonlinear content is organised into layers.
+tree, nonlinear content is organised into layers. 
+
+```json
+[
+  {
+    "type": "NonLinearImage",
+    "source": "resource://images/7sk10sp.jpg",
+    "label": "Brand colour palette",
+    "color": null,
+  }
+]
+```
