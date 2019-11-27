@@ -43,6 +43,12 @@ module.exports = {
         ],
       },
       {
+        title: "Style Reference",
+        children: [
+          "/styles/"
+        ]
+      },
+      {
         title: "Migrations",
         children: [
           "/migrations/",

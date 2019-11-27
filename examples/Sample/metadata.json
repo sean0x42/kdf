@@ -1,0 +1,9 @@
+{
+  "title": "Sample KDF Document",
+  "authors": ["Sean Bailey"],
+  "createdAt": "2019-11-27T13:34:15+11:00",
+  "updatedAt": "2019-11-27T13:34:15+11:00",
+  "editDuration": "PT4H30M5S",
+  "supportedMediums": ["print", "web"],
+  "kdfVersion": "0.1.0-alpha"
+}

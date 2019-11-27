@@ -28,7 +28,6 @@ store as they see fit.
 ```json
 {
   "title": "15 Reasons Comic Sans is the World's Greatest Font",
-  "target": "print",
   "authors": [
     "Sean Bailey",
     "Adam Crocker",
@@ -39,7 +38,8 @@ store as they see fit.
   "createdAt": "2019-02-01T12:59:15+11:00",
   "updatedAt": "2019-11-17T11:38:23+11:00",
   "editDuration": "P0Y11M4DT12H30M5S",
-  "kdfVersion": "1.0.5"
+  "supportedMediums": ["print", "web"],
+  "kdfVersion": "0.1.0-alpha"
 }
 ```
 
@@ -131,20 +131,21 @@ use the latest version of KDF.
 ```
 
 
-### Target
+### Supported Mediums
 
-| Type   | Possible Values  |
-| :----- | :--------------- |
-| String | `web` or `print` |
+| Type     | Possible Values  |
+| :------- | :--------------- |
+| String[] | `web` or `print` |
 
-The `target` key defines whether this document has been designed for use in
-print (e.g. as a PDF) or for the web. Application developers can use this value
-to provide different tools depending on the target destination.
+The `supportedMediums` key defines whether this document has been designed for
+use in print (e.g. as a PDF) and/or for the web. Application developers can use
+this value to provide different tools depending on the mediums that the document
+supports.
 
 ```json
 {
   ...,
-  "target": "print",
+  "supportedMediums": ["print", "web"],
   ...
 }
 ```

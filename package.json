@@ -19,5 +19,9 @@
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
     "vuepress": "^1.2.0"
+  },
+  "dependencies": {
+    "global": "^4.4.0",
+    "now": "^16.6.0"
   }
 }
