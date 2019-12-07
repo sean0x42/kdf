@@ -1,20 +1,14 @@
-# Images & Resources
+# Resources
 
-Images and resources play a crucial role in the composition and design of
-documents. So it's vital that KDF takes these kinds of files into account. The
-following page outlines how images, media, and fonts should be stored and
-included in KDF documents.
-
-
-## Resources
-
-In KDF, any kind of media included in a document is called a *resource*.
-Resources are bundled up and included within a single directory within the root
-of the document called `resources/`. These resources are then referenced via
-the use of resource URIs.
+The term *resource* describes any media or data that is included within a KDF
+document. Resources may be images, fonts, videos, scripts, or even plain data.
+Resources may be stored within the document file under the `resources/`
+directory, or may link to online content.
 
 
-### Resource URIs
+## URIs
+
+KDF uses Universal Resource Identifiers (URIs) to 
 
 Resource URIs are a type of URI that uniquely points to a single KDF resource.
 For example, imagine a KDF document with the following content in the resources
