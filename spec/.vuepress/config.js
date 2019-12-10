@@ -58,7 +58,7 @@ module.exports = {
     ],
     nav: [
       { text: "Home", link: "/" },
-      { text: "Dart KDF", link: "https://github.com/sean0x42/dart-kdf" }
+      { text: "Rust KDF", link: "https://github.com/sean0x42/rust-kdf" }
     ],
   }
 }
