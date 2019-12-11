@@ -1,104 +1,56 @@
-# File Structure
+# Document Structure
 
-## File Extension
+If you've seen a `.kdf` file before, you may have been mislead into thinking it
+was a single file. In actuality, a KDF file is an [archive][100]—a collection
+of many smaller files bundled into one using the [Tar][101] utility. Each
+smaller file has a specific responsibility, and contains data that describes
+one component of the overall document. We will explore the purpose of these
+smaller files below.
 
-The standard file extension for KDF documents is `.kdf`. 
+[100]: https://en.wikipedia.org/wiki/Archive_file
+[101]: https://en.wikipedia.org/wiki/Tar_(computing)
 
 
-## JSON
+## Archive Layout
 
-[JavaScript Object Notation][1], or JSON for short, is a popular data
-serialization and interchange format. JSON is great for many reasons—it's quite
-simple, decently human readable, and is supported by *many* programming
-languages. All data in KDF is serialized to this format. See the following
-example:
+A KDF document has the following layout of files and directories. Each
+file/folder contains a link to the section of the specification that defines
+it.
 
-```json
-{
-  "students": [
-    { "name": "Sean" },
-    { "name": "Adam" },
-    { "name": "Luke" },
-    { "name": "David" },
-    { "name": "Prajna" }
-  ],
-  "teacher": {
-    "name": "Alex",
-    "title": "Professor"
-  }
-}
-```
+| File/Folder            | Purpose                                           |
+| :--------------------- | :------------------------------------------------ |
+| [content.json][2.1]    | Contains the content and structure of a document. |
+| [colours.json][2.2]    | Defines the document level colour palette.        |
+| [dictionary.json][2.3] | An optional file that lists words to include in the document level dictionary. |
+| [metadata.json][2.4]   | Stores document metadata, such as title, authors, etc. |
+| [styles.json][2.5]     | Describes how pages and other elements should look. |
+| [resources/][2.6]      | A directory containing images, fonts, and other static content. |
+| [thumbnail.png][2.7]   | An optional thumbnail image to display in the file system. |
 
 ::: tip
-JSON plays a major role in the Kauri Document Format, so I highly recommend
-becoming acquainted with JSON before continuing if you haven't already. 
-
-To learn more, visit the [official JSON website][1] or read [An Introduction to
-JSON][2], a tutorial from the DigitalOcean community.
-:::
-
-[1]: https://json.org/
-[2]: https://www.digitalocean.com/community/tutorials/an-introduction-to-json
-
-
-## Archive Layout 
-
-Much like other document formats, KDF documents are actually compressed archives
-containing a number of smaller files. Each sub-file is responsible for a
-different part of the document. They are listed below:
-
- - [Content][3] (`content.json`) — This file contains the content and structure
-   of a document, both linear and nonlinear. If you imagine the structure of a
-   website, `content.json` is equivalent to the HTML.
- - [Colours][4] (`colours.json`) — This file defines a document level custom
-   colour palette. Shades defined in this file can be used throughout the
-   document.
- - [Dictionary][5] (`dictionary.json`) — An optional file that lists any words
-   that document authors want added to the spellcheck dictionary. When this file
-   doesn't exist, applications can safely assume that no additional words need
-   to be added.
- - [Metadata][6] (`metadata.json`) — A file which stores document metadata, such
-   as the title, KDF version and a list of authors. Applications can also use
-   this file as a generic metadata store.
- - [Styles][7] (`styles.json`) — A file which describes how pages and other
-   elements in the document should be rendered. 
- - [Resources][8] (`resources/`) — A directory containing images, fonts, and any
-   other static content that is included in the document.
- - [Thumbnail][9] (`thumbnail.png`) — An optional thumbnail image to display in
-   the file system. 
-
-::: tip
-You can inspect the structure of a KDF file by changing the file extension from
+You can inspect the layout of a KDF file by changing the file extension from
 `.kdf` to `.tar.gz`, and then extracting the contents of the archive to your
 file system. If you're a Windows user, you may require a third party tool such
-as [7zip][10] or [WinRAR][11] to extract a `.tar.gz` file.
+as [7zip][2.8] or [WinRAR][2.9] to extract a `.tar.gz` file.
 :::
 
-[3]: /specification/content.md
-[4]: /specification/colours.md
-[5]: /specification/dictionary.md
-[6]: /specification/metadata.md
-[7]: /specification/styles.md
-[8]: /specification/resources.md
-[9]: /specification/thumbnail.md
-[10]: https://www.7-zip.org/
-[11]: https://www.win-rar.com/
+[2.1]: /specification/content.md
+[2.2]: /specification/colours.md
+[2.3]: /specification/dictionary.md
+[2.4]: /specification/metadata.md
+[2.5]: /specification/styles.md
+[2.6]: /specification/resources.md
+[2.7]: /specification/thumbnail.md
+[2.8]: https://www.7-zip.org/
+[2.9]: https://www.win-rar.com/
 
 
 ## Compression
 
-KDF documents should be [compressed][12] to reduce their overall foot print.
+KDF documents should be [compressed][3.1] to reduce their overall footprint.
 This has a number of benefits, such as taking less space on the user's file
-system, and improving transfer speeds across networks.
+system, and improving transfer speeds across networks. The compression
+algorithm of choice for KDF is [Gzip][3.2].
 
-Applications should start by collecting each of the sub-files listed [above][13]
-and storing them within a single [tar][14] archive, or **tarball**. The
-resulting archive should then be compressed with the [Gzip][15] algorithm. You
-may have encountered `.tar.gz` files before, and the logic and methodology here
-is the same. Note however that the file extension should always be `.kdf` to
-avoid confusion.
-
-[12]: https://en.wikipedia.org/wiki/Data_compression
-[13]: #archive-layout
-[14]: https://en.wikipedia.org/wiki/Tar_(computing)
-[15]: https://www.gnu.org/software/gzip
+[3.1]: https://en.wikipedia.org/wiki/Data_compression
+[3.2]: https://www.gnu.org/software/gzip

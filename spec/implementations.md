@@ -4,7 +4,7 @@ Looking for KDF support? This page documents any libraries, tools, and
 implementations that support the Kauri Document Format.
 
 
-## Rust 
+## Rust KDF <Badge text="Official" type="tip" /> 
 
 ::: danger
 Rust KDF is still currently in active development. The information below may be

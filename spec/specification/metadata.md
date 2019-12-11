@@ -1,10 +1,5 @@
 # Metadata
 
-This page explores the storage and use of metadata in KDF documents.
-
-
-## Background
-
 > Metadata is data that provides information about other data.  
 > — [Wikipedia (Metadata)][1]
 

@@ -1,5 +1,5 @@
 module.exports = {
-  title: "KDF v0.1.0-alpha",
+  title: "KDF Specification",
   description: "A technical specification for the Kauri Document Format",
   dest: "public",
   themeConfig: {
@@ -21,6 +21,7 @@ module.exports = {
       {
         title: "Specification",
         children: [
+          "/specification/json",
           "/specification/structure",
           "/specification/content",
           "/specification/metadata",
