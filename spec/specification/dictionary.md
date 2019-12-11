@@ -1,11 +1,5 @@
 # Dictionary
 
-This page discusses the document level dictionary, and why it's valuable for
-document authors.
-
-
-## Background
-
 There are many circumstances in which an author may wish to add their own words
 to the spell check dictionary. Consider each of the following edge cases for
 example:
@@ -21,7 +15,7 @@ example:
  - A word is missing from the standard dictionary for some other reason.
 
 
-## Document Dictionary
+## dictionary.json
 
 A document level dictionary containing additional words for the spell check
 function, is stored in `dictionary.json`. It contains a single JSON array of
