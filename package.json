@@ -1,11 +1,11 @@
 {
   "name": "kdf",
-  "description": "A technical specification for the Kauri Document Format",
+  "description": "A technical specification for the Koi Document Format",
   "version": "0.1.0-alpha",
   "license": "MIT",
   "repository": "github:sean0x42/kdf",
   "keywords": [
-    "kauri",
+    "koi",
     "kdf",
     "specification",
     "documents"
@@ -15,13 +15,13 @@
     "dev": "vuepress dev spec",
     "build": "vuepress build spec"
   },
+  "dependencies": {
+    "global": "^4.4.0",
+    "now": "^16.6.0"
+  },
   "devDependencies": {
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
     "vuepress": "^1.2.0"
-  },
-  "dependencies": {
-    "global": "^4.4.0",
-    "now": "^16.6.0"
   }
 }

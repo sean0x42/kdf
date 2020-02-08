@@ -5,11 +5,10 @@ KDF is currently an experimental document format, and may change suddenly and
 without notice at any time. 
 :::
 
-The following is a technical specification for the **Kauri Document Format**.
+The following is a technical specification for the **Koi Document Format**.
 KDF is an [open source][1.2], [JSON][1.3] based document format, that aims to
 breath some life back into your document editing experience. KDF was designed
-to enable a brand new document processor that is currently in development,
-codenamed *Kauri*. More on that later.
+to enable a brand new document processor named Koi.
 
 [1.2]: https://github.com/sean0x42/kdf
 [1.3]: /specification/json

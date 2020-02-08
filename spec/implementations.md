@@ -1,7 +1,7 @@
 # Implementations
 
 Looking for KDF support? This page documents any libraries, tools, and
-implementations that support the Kauri Document Format.
+implementations that support the Koi Document Format.
 
 
 ## Rust KDF <Badge text="Official" type="tip" /> 

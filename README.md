@@ -1,14 +1,13 @@
-# Kauri Document Format
+# Koi Document Format
 
 ![GitHub package.json version][1.0]
 
 ![Warning: KDF is currently an experimental document format.][1.1]
 
-The following is a technical specification for the **Kauri Document Format**.
+The following is a technical specification for the **Koi Document Format**.
 KDF is an [open source][1.2], [JSON][1.3] based document format, that aims to
 breath some life back into your document editing experience. KDF was designed
-to enable a brand new document processor that is currently in development,
-codenamed *Kauri*. More on that later.
+to enable a brand new document processor named Koi.
 
 [1.0]: https://img.shields.io/github/package-json/v/sean0x42/kdf?color=%233eaf7c&style=flat-square
 [1.1]: https://i.imgur.com/tZn38eJ.png

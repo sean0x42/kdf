@@ -1,6 +1,6 @@
 module.exports = {
   title: "KDF Specification",
-  description: "A technical specification for the Kauri Document Format",
+  description: "A technical specification for the Koi Document Format",
   dest: "public",
   themeConfig: {
     lastUpdated: "Last updated",
@@ -11,7 +11,7 @@ module.exports = {
     sidebarDepth: 2,
     sidebar: [
       {
-        title: "Kauri Document Format",
+        title: "Koi Document Format",
         children: [
           "/",
           "/implementations",
